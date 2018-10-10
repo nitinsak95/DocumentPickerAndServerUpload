@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EC025ED6D544C259226E47C /* Pods_DocPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F586AD0250CC4F3995D40171 /* Pods_DocPicker.framework */; };
 		A485D930212C18580077C390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D92F212C18580077C390 /* AppDelegate.swift */; };
 		A485D932212C18580077C390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A485D931212C18580077C390 /* ViewController.swift */; };
 		A485D935212C18590077C390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A485D933212C18590077C390 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EB7A0C13B6D2FAEA2049ACD /* Pods-DocPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocPicker/Pods-DocPicker.release.xcconfig"; sourceTree = "<group>"; };
+		5A4976FC95EF360BA79C9829 /* Pods-DocPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocPicker/Pods-DocPicker.debug.xcconfig"; sourceTree = "<group>"; };
 		A485D92C212C18580077C390 /* DocPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A485D92F212C18580077C390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A485D931212C18580077C390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,8 @@
 		A485D936212C18590077C390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A485D939212C18590077C390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A485D93B212C18590077C390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A485D941212C1CB20077C390 /* DocPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocPicker.entitlements; sourceTree = "<group>"; };
+		F586AD0250CC4F3995D40171 /* Pods_DocPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC025ED6D544C259226E47C /* Pods_DocPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023E99EEB13B7934F4253F92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A4976FC95EF360BA79C9829 /* Pods-DocPicker.debug.xcconfig */,
+				3EB7A0C13B6D2FAEA2049ACD /* Pods-DocPicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A485D923212C18570077C390 = {
 			isa = PBXGroup;
 			children = (
 				A485D92E212C18580077C390 /* DocPicker */,
 				A485D92D212C18580077C390 /* Products */,
+				023E99EEB13B7934F4253F92 /* Pods */,
+				C848235537360B95101ECDC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		A485D92E212C18580077C390 /* DocPicker */ = {
 			isa = PBXGroup;
 			children = (
+				A485D941212C1CB20077C390 /* DocPicker.entitlements */,
 				A485D92F212C18580077C390 /* AppDelegate.swift */,
 				A485D931212C18580077C390 /* ViewController.swift */,
 				A485D933212C18590077C390 /* Main.storyboard */,
@@ -64,6 +82,14 @@
 			path = DocPicker;
 			sourceTree = "<group>";
 		};
+		C848235537360B95101ECDC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F586AD0250CC4F3995D40171 /* Pods_DocPicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A485D93E212C18590077C390 /* Build configuration list for PBXNativeTarget "DocPicker" */;
 			buildPhases = (
+				3F850B2A1E972B32BEF7330E /* [CP] Check Pods Manifest.lock */,
 				A485D928212C18580077C390 /* Sources */,
 				A485D929212C18580077C390 /* Frameworks */,
 				A485D92A212C18580077C390 /* Resources */,
+				0094DB1DC627980065A3230E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +125,14 @@
 					A485D92B212C18580077C390 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,6 +166,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0094DB1DC627980065A3230E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DocPicker/Pods-DocPicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocPicker/Pods-DocPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F850B2A1E972B32BEF7330E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A485D928212C18580077C390 /* Sources */ = {
@@ -272,9 +347,12 @@
 		};
 		A485D93F212C18590077C390 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4976FC95EF360BA79C9829 /* Pods-DocPicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DocPicker/DocPicker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37HW54R42N;
 				INFOPLIST_FILE = DocPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = affixus.DocPicker;
@@ -286,9 +364,12 @@
 		};
 		A485D940212C18590077C390 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB7A0C13B6D2FAEA2049ACD /* Pods-DocPicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DocPicker/DocPicker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37HW54R42N;
 				INFOPLIST_FILE = DocPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = affixus.DocPicker;
